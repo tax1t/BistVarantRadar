@@ -538,9 +538,9 @@ if __name__ == "__main__":
         print(f"[URL] Local URL: http://127.0.0.1:{port}")
 
     if __name__ == "__main__":
-    try:
-        app.run(host="0.0.0.0", port=port)
-    except Exception as e:
-        import traceback
-        traceback.print_exc()
-        raise e
+        try:
+            app.run(host="0.0.0.0", port=port)
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            raise e
