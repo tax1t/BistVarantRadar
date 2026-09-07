@@ -1,12 +1,5 @@
 services:
   - type: web
-    name: varantradar-pro
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python server.py
-    repo: https://github.com/<KULLANICI_ADINIZ>/<REPO_ADINIZ>
-    plan: free
-    autoDeploy: true
-    envVars:
-      - key: PORT
-        value: 5000
+    startCommand: PYTHONPATH=. python server.py
