@@ -1,6 +1,6 @@
 import time
 from typing import List, Dict
-from data.providers.base_provider import BaseDataProvider
+from providers.base_provider import BaseDataProvider
 
 class DataHealthMonitor:
     """
