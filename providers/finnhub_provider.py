@@ -2,8 +2,8 @@ import pandas as pd
 import requests
 import time
 from typing import Optional
-from data.providers.base_provider import BaseDataProvider
-from data.security import Vault
+from providers.base_provider import BaseDataProvider
+from security import Vault
 
 class FinnhubProvider(BaseDataProvider):
     """
