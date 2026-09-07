@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import json
 import pandas as pd
 
-from data.pipeline import DataPipeline
+from pipeline import DataPipeline
 
 from analysis.technical import TechnicalEngine
 from analysis.fundamental import FundamentalEngine
