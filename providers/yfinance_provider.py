@@ -1,7 +1,7 @@
 import yfinance as yf
 import pandas as pd
 import time
-from data.providers.base_provider import BaseDataProvider
+from providers.base_provider import BaseDataProvider
 
 class YFinanceProvider(BaseDataProvider):
     """
