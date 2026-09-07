@@ -1,14 +1,14 @@
 import pandas as pd
 import time
 from typing import Optional, List
-from data.providers.base_provider import BaseDataProvider
-from data.providers.yfinance_provider import YFinanceProvider
-from data.providers.finnhub_provider import FinnhubProvider
-from data.validation import DataValidator
-from data.cache import DataCache
-from data.health_monitor import DataHealthMonitor
-from data.audit import Auditor
-from data.governance import DataGovernance
+from providers.base_provider import BaseDataProvider
+from providers.yfinance_provider import YFinanceProvider
+from providers.finnhub_provider import FinnhubProvider
+from validation import DataValidator
+from cache import DataCache
+from health_monitor import DataHealthMonitor
+from audit import Auditor
+from governance import DataGovernance
 
 class ValidatedDataResult:
     """Doğrulanmış veri sonucu. Kalite skoru ve kaynak bilgisi içerir."""
