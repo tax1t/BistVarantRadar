@@ -5,18 +5,14 @@ import json
 import pandas as pd
 
 from pipeline import DataPipeline
-
 from analysis.technical import TechnicalEngine
 from analysis.fundamental import FundamentalEngine
 from analysis.smart_money import SmartMoneyEngine
 from analysis.sentiment import SentimentEngine
 from analysis.macro import MacroEngine
 from analysis.options_engine import OptionsEngine
-
 from decision.executive import ExecutiveDecisionEngine
 from execution.planner import TradePlanner
-
-# Kendi yazdığımız Backtest ve Optimizasyon Motorunu dahil ediyoruz
 from engines.backtest_engine import BacktestEngine
 
 def run_simulation(symbol: str):
