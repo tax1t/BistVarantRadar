@@ -1,5 +1,5 @@
 import pandas as pd
-from data.source_manager import DataSourceManager, ValidatedDataResult
+from source_manager import ValidatedDataResult
 
 class DataPipeline:
     """
