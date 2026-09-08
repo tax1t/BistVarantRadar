@@ -539,9 +539,10 @@ if __name__ == "__main__":
 
     if __name__ == "__main__":
         try:
-           import os
-port = int(os.environ.get("PORT", 10000))
-        except Exception as e:
-            import traceback
-            traceback.print_exc()
-            raise e
+    import os
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+    raise e
